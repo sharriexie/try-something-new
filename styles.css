@@ -20,6 +20,21 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Demo Banner */
+.demo-banner {
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    color: white;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     line-height: 1.6;
@@ -36,7 +51,7 @@ body {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 0;
+    top: 40px;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.95);
@@ -322,17 +337,32 @@ body {
 
 .footer p {
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+}
+
+.footer p:last-child {
+    margin-bottom: 0;
+    font-size: 0.875rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .demo-banner {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .navbar {
+        top: 36px;
+    }
+
     .nav-toggle {
         display: block;
     }
 
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 106px;
         left: 0;
         right: 0;
         background: white;
